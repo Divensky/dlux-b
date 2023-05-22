@@ -1,0 +1,78 @@
+
+
+variables:
+  GITLAB_FEATURES: '${GITLAB_FEATURES},dependency_scanning'
+
+include:
+  - template: Dependency-Scanning.gitlab-ci.yml
+
+stages:
+  - build
+  - test
+  - deploy
+
+.node:
+  image: node:16
+
+  before_script:
+    - '[[ -d node_modules ]] || npm ci --progress=false'
+
+  cache:
+    - key:
+        files:
+          - package-lock.json
+      paths:
+        - node_modules
+
+build:
+  stage: build
+  extends: .node
+  script:
+    - npm run production
+    - npm run build:eleventy
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 day
+
+prettier:
+  extends: .node
+  allow_failure: true
+  stage: test
+  script:
+    - npm run prettier-check
+
+eslint:
+  extends: .node
+  allow_failure: true
+  stage: test
+  script:
+    - npm run eslint-check
+
+stylelint:
+  extends: .node
+  allow_failure: true
+  stage: test
+  script:
+    - npm run stylelint-check
+
+pages:
+  stage: deploy
+  script:
+    - echo "Do nothing"
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+
+
+build:eleventy:
+  stage: build
+  extends: .node
+  script:
+    - npm run build:eleventy
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 day
