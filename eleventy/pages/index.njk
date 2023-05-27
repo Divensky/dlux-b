@@ -1,7 +1,133 @@
 ---
-title: Главная страница
+title: dLux Services
 layout: page.njk
 permalink: index.html
 ---
 
-One two three four!
+            <main>
+            <section class="marketing">
+                <div class="wrapper">
+                    <span class="marketing-image"></span>
+                    <span class="decorative-line-marketing"></span>
+                    <div class="marketing-text-container">
+                        <h2 id="about">Basic marketing information <span class="accent-color">about the company</span></h2>
+                        <p class="marketing-info">Basic marketing info about the company: We deliver customized cloud based solutions for your ideas. 20 years of high performance cloud based development experience (that’s my experience incl. Google and Gemini).</p>
+                        <a href="#request-form" class="request-button narrow">Send a request</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="wrapper">
+                    <h2 id="services">Services</h2>
+                    <span class="decorative-line-services"></span>
+                    <ul class="services-list nobullet">
+                        <li>
+                            <strong>Cloud based development</strong>
+                            <p>Develop an app for your project: web and mobile apps for your custom business needs on Amazon Web Services, Google Cloud Platform or your private cloud.</p>
+                            <a href="#request-form" class="request-button">Send a request</a>
+                        </li>
+
+                        <li>
+                            <strong>Remote development teams</strong>
+                            <p>Manage and improve your services with a dedicated development team that covers all functions. You only need to define the tasks and priorities, we are doing the rest.</p>
+                            <a href="#request-form" class="request-button">Send a request</a>
+                        </li>
+
+                        <li>
+                            <strong>Infrastructure management</strong>
+                            <p>We monitor your services and keep them running 24/7</p>
+                            <a href="#request-form" class="request-button">Send a request</a>
+                        </li>
+                    </ul>
+                </div>    
+            </section>
+
+
+
+            <section class="founder">
+                <div class="wrapper">
+                    
+                    <div class="green-blur"></div>
+                    <h2 id="founder">Founder</h2>
+                    <span class="decorative-line-founder"></span>
+                    <p>Balazs, 20 years experience in cloud development, leader and contributor of many projects with billions of users as a senior Google</p>
+                    <div class="clouds-wrapper">
+                        <div class="clouds"></div>
+                    </div>
+                    <div class="img-wrapper">
+                        <picture>
+                            <source media="(max-width: 899px)" 
+                                type="image/webp"
+                                srcset="images/founder_mobile1x.webp 1x, images/founder_mobile2x.webp 2x, images/founder_mobile3x.webp 3x" 
+                                width="288" height="180" 
+                                />
+                            <source media="(min-width: 900px)" 
+                                type="image/webp"
+                                srcset="images/founder_desktop1x.webp 1x, images/founder_desktop2x.webp 2x, images/founder_desktop3x.webp 3x" 
+                                width="500" height="419" 
+                                />
+                            <source media="(max-width: 899px)" 
+                                type="image/jpeg"
+                                srcset="images/founder_mobile1x.jpg 1x, images/founder_mobile2x.jpg 2x, images/founder_mobile3x.jpg 3x" 
+                                width="288" height="180" 
+                                />
+                            <source media="(min-width: 900px)" 
+                                type="image/jpeg"
+                                srcset="images/founder_desktop1x.jpg 1x, images/founder_desktop2x.jpg 2x, images/founder_desktop3x.jpg 3x" 
+                                width="500" height="419" 
+                                />
+                                    
+                            <img src="images/founder_desktop1x.jpg" 
+                                alt="Balazs" 
+                                loading="lazy" />
+                        </picture>
+                    </div>                
+                </div>
+            </section>
+
+
+            <section class="contacts">
+                <div class="wrapper">
+                    <div class="contact-info-wrapper" id="contacts">
+                        <h2 class="desktop-only">Contacts</h2>
+                        <a href="mailto:1@dlux.services" class="accent-font notextdecoration">1@dlux.services</a>  
+                        <a href="tel:+118143511265" class="accent-font notextdecoration">+118143511265</a>
+                        
+                    </div>
+                    <form action="#" method="post" name="request-form" id="request-form" class="contacts-form">
+                        <fieldset class="slim-font">
+                            <legend>
+                                Send <span class="accent-color">a request</span>                              
+                            </legend>
+                            <div class="floating-labels">
+                                <input type="text" name="name-field" id="name-field" placeholder="Name" />
+                                <label for="name-field">Name</label>
+                                <input type="text" name="company-field" id="company-field" placeholder="Company" />
+                                <label for="company-field">Company</label>
+                                <input type="tel" name="phone-field" id="phone-field" placeholder="Callback phone number" />
+                                <label for="phone-field">Callback phone number</label>
+                                <input type="text" onfocus="(this.type='datetime-local')" onblur="(this.type='text')" name="datetime-field" id="datetime-field" placeholder="When is a good time to call" />
+                                <!-- https://www.geeksforgeeks.org/how-to-set-placeholder-value-for-input-type-date-in-html-5/ -->
+                                <label for="datetime-field">When is a good time to call</label>
+                                <input type="email" name="email-field" id="email-field" placeholder="Email" required />
+                                <label for="email-field">Email</label>
+                                <input type="text" name="what-field" id="what-field" placeholder="What can we help you with?" />
+                                <label for="what-field">What can we help you with?</label>
+                                </div>
+                            <select name="origin-field" id="origin-field" required >
+                                <option value="" disabled selected>How did you find us?</option>
+                                <option value="Friends">Friends</option>
+                                <option value="Search">Search</option>
+                                <option value="Social media">Social media</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label for="origin-field">How did you find us?</label>
+                            <input type="checkbox" name="pers-data-field" id="pers-data-field" checked />
+                            <label for="pers-data-field">I agree with the personal data processing policy</label>
+                            <button class="request-button narrow" type="submit">Send a request</button>
+                        </fieldset>
+                    </form>
+                </div> 
+            </section>
+        </main>

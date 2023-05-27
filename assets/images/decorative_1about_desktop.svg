@@ -1,0 +1,28 @@
+<svg width="523" height="291" viewBox="0 0 523 291" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_621_127)">
+<path d="M489.333 273.047C484.99 272.262 480.834 275.147 480.049 279.489C479.265 283.832 482.149 287.988 486.492 288.772C490.834 289.557 494.99 286.672 495.775 282.33C496.559 277.988 493.675 273.831 489.333 273.047Z" stroke="#66DD8D" stroke-width="3.16" stroke-miterlimit="10"/>
+<path d="M19.74 63.86C19.74 58.41 15.32 53.99 9.87 53.99C4.42 53.99 -6.69658e-07 58.41 -4.31431e-07 63.86C-1.93204e-07 69.31 4.42 73.73 9.87 73.73C15.32 73.73 19.74 69.31 19.74 63.86Z" fill="#66DD8D"/>
+<path d="M479.87 280.85L298.78 280.85L123.95 106.03L52.0301 106.03L9.87011 63.86" stroke="url(#paint0_linear_621_127)" stroke-width="3.16" stroke-miterlimit="10"/>
+</g>
+<g clip-path="url(#clip1_621_127)">
+<path d="M514.333 219.047C509.99 218.262 505.834 221.147 505.049 225.489C504.265 229.832 507.149 233.988 511.492 234.772C515.834 235.557 519.99 232.672 520.775 228.33C521.559 223.988 518.675 219.831 514.333 219.047Z" fill="#66DD8D" stroke="#66DD8D" stroke-width="3.16" stroke-miterlimit="10"/>
+<path d="M44.74 9.85998C44.74 4.40998 40.32 -0.0100257 34.87 -0.0100255C29.42 -0.0100252 25 4.40999 25 9.85999C25 15.31 29.42 19.73 34.87 19.73C40.32 19.73 44.74 15.31 44.74 9.85998Z" fill="#66DD8D"/>
+<path d="M504.87 226.85L323.78 226.85L148.95 52.03L77.0301 52.03L34.8701 9.85999" stroke="url(#paint1_linear_621_127)" stroke-width="3.16" stroke-miterlimit="10"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_621_127" x1="480" y1="284.48" x2="-49.4999" y2="-6.02003" gradientUnits="userSpaceOnUse">
+<stop stop-color="#66DD8D"/>
+<stop offset="1" stop-color="#315BEF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_621_127" x1="505" y1="226.48" x2="107" y2="-1.52003" gradientUnits="userSpaceOnUse">
+<stop stop-color="#66DD8D"/>
+<stop offset="1" stop-color="#315BEF"/>
+</linearGradient>
+<clipPath id="clip0_621_127">
+<rect width="236.48" height="497.44" fill="white" transform="translate(0 290.48) rotate(-90)"/>
+</clipPath>
+<clipPath id="clip1_621_127">
+<rect width="236.48" height="497.44" fill="white" transform="translate(25 236.48) rotate(-90)"/>
+</clipPath>
+</defs>
+</svg>

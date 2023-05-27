@@ -1,0 +1,141 @@
+.services {
+	.wrapper {
+			position: relative;
+			padding: 0 16px;
+		}
+	}
+
+.services h2 {
+  font-size: 48px;
+  line-height: 0.9;
+  margin-top: 58px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.services h2::before {
+  content: "";
+  width: 136px;
+  height: 136px;
+  background: #66DD8D;
+  opacity: 0.4;
+  filter: blur(50px);
+  position: absolute;
+  top: -130px;
+  left: -68px;
+  z-index: -3; 
+}
+
+.decorative-line-services {
+  content: url(../images/decorative_2services_mobile.svg);
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  z-index: -1; 
+}
+
+.services ul {
+  display: grid;
+  gap: 24px;
+}
+
+.services li {
+  width: 100%;
+  background: rgba(25, 63, 102, 0.32);
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.services li strong {
+  font-size: 24px;
+  line-height: 0.92;
+  margin-bottom: 16px;
+}
+
+.services li strong::before {
+  padding-top: 8px;
+  margin-bottom: 80px;
+  display: block;
+}
+
+.services li:nth-child(1) strong::before {
+  content: url(../images/services1_data.svg);
+  padding-left: 12px;
+  width: 24px;
+  height: 32px;
+}
+
+.services li:nth-child(2) strong::before {
+  content: url(../images/services2_window.svg);
+  padding-left: 6px;
+  width: 36px;
+  height: 32px;
+}
+
+.services li:nth-child(3) strong::before {
+  content: url(../images/services3_clock.svg);
+  padding-left: 6px;
+  padding-top: 6px;
+  width: 32px;
+  height: 32px;
+
+}
+
+.services li p {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 900px) {
+  .services h2 {
+    line-height: 0.9;
+    margin-top: 200px;
+    margin-bottom: -26px;
+    margin-left: 93px;
+    font-size: min(128px, calc(81px + 47 * (42vw - 360px) / 195));
+    /* calculated in Contacts section. 
+      Formula from: https://www.smashingmagazine.com/2016/05/fluid-typography/ */
+
+  }
+
+  .services h2::before {
+    width: 288px;
+    height: 288px;
+    opacity: 0.7;
+    filter: blur(150px);
+    top: -190px;
+    left: -260px;    
+  }
+
+  .decorative-line-services {
+    content: url(../images/decorative_2services_desktop.svg);
+    top: min(34px, calc(11px + (34 - 11) * (100vw - 900px) / 300));
+  }
+  .services ul {
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 10px;  
+   margin: 0 30px;
+  }
+
+  .services li {
+    display: grid;
+    grid-template-rows: 224px max-content;
+    backdrop-filter: blur(24px);
+    padding: 26px;
+  }
+
+  .services li:first-child {
+    backdrop-filter: none;
+  }
+
+  .services li strong {
+    margin-bottom: 24px;
+  }
+  
+  .services li strong::before {
+  padding-top: 11px;
+  margin-bottom: 122px;  
+  }
+
+}

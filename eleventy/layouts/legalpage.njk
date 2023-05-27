@@ -8,12 +8,12 @@
         <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | url }}"/>
     </head>
     <body class="page__body">
-    {% include 'layout/header.njk' %}
 
+    {% include 'layout/header_legalpage.njk' %}
 
     {{ content | safe }}
 
-    {% include 'layout/footer.njk' %}
+    {% include 'layout/footer_legalpage.njk' %}
 
     <script type="module" src="{{ '/assets/js/app.js' | url }}"></script>
     </body>

@@ -1,0 +1,35 @@
+.legal-wrapper {
+	padding: 0 16px;
+}
+.legal-section {
+	display: block;
+	color: #D4D4D4;
+	margin-top: 32px;
+	margin-bottom: 64px;
+	max-width: 895px;
+	p {
+		margin-bottom: 16px;
+	}
+	ul {
+		margin-bottom: 24px;
+		margin-left: 24px;
+	}
+	li {
+		margin-bottom: 8px;
+	}
+	a {
+		color: inherit;
+	}
+}
+.legal-title {
+	font-size: 24px;
+	line-height: 0.9;
+	color: #FFFFFF;
+	margin-bottom: 24px;
+}
+.legal-subtitle {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.25;
+	margin-bottom: 24px;
+}
