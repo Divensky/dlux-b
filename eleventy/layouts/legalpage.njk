@@ -2,12 +2,13 @@
 <html class="page" lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <title>{{ renderData.title or title }}</title>
         <link rel="stylesheet" href="{{ '/assets/css/app.css' | url }}">
         <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | url }}"/>
     </head>
     <body class="page__body">
+    <div id="page">
 
     {% include 'layout/header_legalpage.njk' %}
 
@@ -16,5 +17,6 @@
     {% include 'layout/footer_legalpage.njk' %}
 
     <script type="module" src="{{ '/assets/js/app.js' | url }}"></script>
+    </div>
     </body>
 </html>

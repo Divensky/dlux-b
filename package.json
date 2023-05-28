@@ -28,5 +28,8 @@
         "typescript": "^4.6.4",
         "@11ty/eleventy": "^1.0.1"
     },
+   "dependencies": {
+        "mmenu-js": "^9.3.0"
+  },
     "private": true
 }
