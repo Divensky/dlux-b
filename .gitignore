@@ -4,9 +4,13 @@
 node_modules
 
 #compiling files
-public/assets
+
 public/mix-manifest.json
 
 public/*
-!public/images
+!public/images/
+!public/assets/
+public/assets/*
+!public/assets/favicon.ico
+
 
