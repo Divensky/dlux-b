@@ -1,5 +1,5 @@
 .contacts {
-	.wrapper {
+	&__inner {
 			padding: 0 16px;
 		}
 	}
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.contacts h2 {
+.contacts-section__title {
   margin-top: 101px;
   font-size: 0;
 }
@@ -26,16 +26,16 @@
 }
 
 @media screen and (min-width: 900px) {
-	.contacts .wrapper {
+	.contacts__inner {
     	display: grid;
 		grid-template-columns: 0.8fr 1fr;
 		gap: min(30px, calc(9px + 21 * (100vw - 890px) / 310 ));
 		padding: 0 30px; }
-  .contact-info-wrapper, .contacts-form {
+  .contact-info-wrapper, .contacts__form {
     margin-top: 200px;
   }
 
-  .contacts h2 {
+  .contacts-section__title {
     margin-top: 362px;
     margin-bottom: 64px;
     font-size: min(128px, calc(81px + 47 * (42vw - 360px) / 195));
@@ -46,7 +46,6 @@
       360px: min text box size
       555px: max text box size
       Formula from: https://www.smashingmagazine.com/2016/05/fluid-typography/ */
-
   }
 
   .contacts a {

@@ -33,3 +33,9 @@
 	line-height: 1.25;
 	margin-bottom: 24px;
 }
+
+@media screen and (min-width: 900px) { 
+	.legal-wrapper {
+		padding: 0 30px;
+	}
+}

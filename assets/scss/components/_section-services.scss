@@ -1,0 +1,129 @@
+.section__title {
+  /*this is h2 for services, founder and contacts*/
+  font-size: 48px;
+  line-height: 0.9;
+}
+
+.services-section {
+  &__inner {
+    position: relative;
+    padding: 0 16px;
+  }
+  &__title {
+    margin-top: 58px;
+    margin-bottom: 16px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 136px;
+      height: 136px;
+      background: #66dd8d;
+      opacity: 0.4;
+      filter: blur(50px);
+      position: absolute;
+      top: -130px;
+      left: -68px;
+      z-index: -3;
+    }
+  }
+  &__decorative-line {
+    content: url(~/images/decorative_2services_mobile.svg);
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    z-index: -1;
+  }
+  &__services-list {
+    display: grid;
+    gap: 24px;
+  }
+  &__item {
+    width: 100%;
+    background: rgba(25, 63, 102, 0.32);
+    backdrop-filter: blur(16px);
+    border-radius: 24px;
+    padding: 16px;
+    &:nth-child(1) strong::before {
+      content: url(~/images/services1_data.svg);
+      padding-left: 12px;
+      width: 24px;
+      height: 32px;
+    }
+    &:nth-child(2) strong::before {
+      content: url(~/images/services2_window.svg);
+      padding-left: 6px;
+      width: 36px;
+      height: 32px;
+    }
+    &:nth-child(3) strong::before {
+      content: url(~/images/services3_clock.svg);
+      padding-left: 6px;
+      padding-top: 6px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__item-title {
+    font-size: 24px;
+    line-height: 0.92;
+    margin-bottom: 16px;
+    &::before {
+      padding-top: 8px;
+      margin-bottom: 80px;
+      display: block;
+    }
+  }
+  &__item-text {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .services-section {
+    &__title {
+      margin-top: 200px;
+      margin-bottom: -26px;
+      margin-left: 93px;
+      &::before {
+        width: 288px;
+        height: 288px;
+        opacity: 0.7;
+        filter: blur(150px);
+        top: -190px;
+        left: -260px;
+      }
+    }
+    &__decorative-line {
+      content: url(~/images/decorative_2services_desktop.svg);
+      top: min(34px, calc(11px + (34 - 11) * (100vw - 900px) / 300));
+    }
+    &__services-list {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin: 0 30px;
+    }
+    &__item {
+      display: grid;
+      grid-template-rows: 224px max-content;
+      backdrop-filter: blur(24px);
+      padding: 26px;
+      &:first-child {
+        backdrop-filter: none;
+      }
+    }
+    &__item-title {
+      margin-bottom: 24px;
+      &::before {
+        padding-top: 11px;
+        margin-bottom: 122px;
+      }
+    }
+  }
+
+  .section__title {
+    font-size: min(128px, calc(81px + 47 * (42vw - 360px) / 195));
+    /* calculated in Contacts section. 
+      Formula from: https://www.smashingmagazine.com/2016/05/fluid-typography/ */
+  }
+}

@@ -5,38 +5,38 @@ permalink: index.html
 ---
 
             <main>
-            <section class="marketing">
-                <div class="wrapper">
-                    <span class="marketing-image"></span>
-                    <span class="decorative-line-marketing"></span>
-                    <div class="marketing-text-container">
-                        <h2 id="about">Basic marketing information <span class="accent-color">about the company</span></h2>
-                        <p class="marketing-info">Basic marketing info about the company: We deliver customized cloud based solutions for your ideas. 20 years of high performance cloud based development experience (that’s my experience incl. Google and Gemini).</p>
+            <section class="about-section marketing">
+                <div class="container about-section__inner">
+                    <span class="about-section__image"></span>
+                    <span class="about-section__decorative-line"></span>
+                    <div class="about-section__text-container">
+                        <h2 id="about" class="section-title_small about-section__title">Basic marketing information <span class="accent-color">about the company</span></h2>
+                        <p class="about-section__text">Basic marketing info about the company: We deliver customized cloud based solutions for your ideas. 20 years of high performance cloud based development experience (that’s my experience incl. Google and Gemini).</p>
                         <a href="#request-form" class="request-button narrow">Send a request</a>
                     </div>
                 </div>
             </section>
 
-            <section class="services">
-                <div class="wrapper">
-                    <h2 id="services">Services</h2>
-                    <span class="decorative-line-services"></span>
-                    <ul class="services-list nobullet">
-                        <li>
-                            <strong>Cloud based development</strong>
-                            <p>Develop an app for your project: web and mobile apps for your custom business needs on Amazon Web Services, Google Cloud Platform or your private cloud.</p>
+            <section class="services-section services">
+                <div class="container services-section__inner wrapper">
+                    <h2 class="services-section__title section__title" id="services">Services</h2>
+                    <span class="services-section__decorative-line"></span>
+                    <ul class="services-section__services-list nobullet">
+                        <li class="services-section__item">
+                            <strong class="services-section__item-title">Cloud based development</strong>
+                            <p class="services-section__item-text">Develop an app for your project: web and mobile apps for your custom business needs on Amazon Web Services, Google Cloud Platform or your private cloud.</p>
                             <a href="#request-form" class="request-button">Send a request</a>
                         </li>
 
-                        <li>
-                            <strong>Remote development teams</strong>
-                            <p>Manage and improve your services with a dedicated development team that covers all functions. You only need to define the tasks and priorities, we are doing the rest.</p>
+                        <li class="services-section__item">
+                            <strong class="services-section__item-title">Remote development teams</strong>
+                            <p class="services-section__item-text">Manage and improve your services with a dedicated development team that covers all functions. You only need to define the tasks and priorities, we are doing the rest.</p>
                             <a href="#request-form" class="request-button">Send a request</a>
                         </li>
 
-                        <li>
-                            <strong>Infrastructure management</strong>
-                            <p>We monitor your services and keep them running 24/7</p>
+                        <li class="services-section__item">
+                            <strong class="services-section__item-title">Infrastructure management</strong>
+                            <p class="services-section__item-text">We monitor your services and keep them running 24/7</p>
                             <a href="#request-form" class="request-button">Send a request</a>
                         </li>
                     </ul>
@@ -45,17 +45,17 @@ permalink: index.html
 
 
 
-            <section class="founder">
-                <div class="wrapper">
+            <section class="founder-section founder">
+                <div class="container founder-section__inner wrapper">
                     
-                    <div class="green-blur"></div>
-                    <h2 id="founder">Founder</h2>
+                    <div class="founder-section__green-blur"></div>
+                    <h2 id="founder" class="founder-section__title section__title">Founder</h2>
                     <span class="decorative-line-founder"></span>
-                    <p>Balazs, 20 years experience in cloud development, leader and contributor of many projects with billions of users as a senior Google</p>
+                    <p class="founder-section__text">Balazs, 20 years experience in cloud development, leader and contributor of many projects with billions of users as a senior Google</p>
                     <div class="clouds-wrapper">
                         <div class="clouds"></div>
                     </div>
-                    <div class="img-wrapper">
+                    <div class="founder-section__img-wrapper">
                         <picture>
                             <source media="(max-width: 899px)" 
                                 type="image/webp"
@@ -87,20 +87,20 @@ permalink: index.html
             </section>
 
 
-            <section class="contacts">
-                <div class="wrapper">
+            <section class="contacts-section contacts">
+                <div class="container contacts__inner">
                     <div class="contact-info-wrapper" id="contacts">
-                        <h2 class="desktop-only">Contacts</h2>
+                        <h2 class="contacts-section__title section__title section-header">Contacts</h2>
                         <a href="mailto:1@dlux.services" class="accent-font notextdecoration">1@dlux.services</a>  
                         <a href="tel:+118143511265" class="accent-font notextdecoration">+118143511265</a>
                         
                     </div>
-                    <form action="#" method="post" name="request-form" id="request-form" class="contacts-form">
-                        <fieldset class="slim-font">
-                            <legend>
+                    <form action="#" method="post" name="request-form" id="request-form" class="request-form contacts__form">
+                        <fieldset class="request-form__inner slim-font">
+                            <legend class="request-form__title">
                                 Send <span class="accent-color">a request</span>                              
                             </legend>
-                            <div class="floating-labels">
+                            <div class="request-form__floating-labels">
                                 <input type="text" name="name-field" id="name-field" placeholder="Name" />
                                 <label for="name-field">Name</label>
                                 <input type="text" name="company-field" id="company-field" placeholder="Company" />

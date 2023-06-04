@@ -1,8 +1,8 @@
 
-        <header id="main-header" class="no-background">
-            <div class="wrapper header-wrapper no-background">
-                <section class="header-top">
-                    <a class="logo-link" href="/index.html">
+        <header id="main-header" class="header no-background">
+            <div class="container header__inner no-background">
+                <section class="header__top">
+                    <a class="header__logo-link" href="/index.html">
                         <picture>
                             <source media="(max-width: 899px)" 
                                 srcset="{{ '/images/logo_header_mobile1x.png' | url }} 1x, {{ '/images/logo_header_mobile2x.png' | url }} 2x, {{ '/images/logo_header_mobile3x.png' | url }} 3x" 
@@ -15,34 +15,34 @@
                         
                             <img src="{{ '/images/logo_header_desktop1x.png' | url }}" 
                                alt="dLux Services" 
-                                class="logo-img" 
+                                class="header__logo-img" 
                                 />
 
                         </picture>
                     </a>
                         
-                    <nav class="header-nav">
-                        <a href="#menu" class="menu-logo-link mobile-only" id="toggle">
+                    <nav class="header__nav">
+                        <a href="#menu" class="header__icon-menu-link mobile-only" id="toggle">
                             <img src="{{ '/images/icon_menu.svg' | url }}" alt="Menu" 
-                                class="menu-logo-img mobile-only"
+                                class="header__icon-menu-img mobile-only"
                                 width="14" height="10" />
-	<!-- "icon_exit_menu.svg" replaced it through toggle js before mmenu --> 
+	                        <!-- "icon_exit_menu.svg" replaced it through toggle js before mmenu --> 
                         </a>
                                         
-	<ul class="header-menu-list nobullet" id="menu">
-                                <li class="menu-flyout-title accent-font">Menu</li>
-                                <li class="menu-item"><a href="/index.html#about">About</a></li>
-                                <li class="menu-item"><a href="/index.html#services">Services</a></li>
-                                <li class="menu-item"><a href="/index.html#founder">Founder</a></li>
-                                <li class="menu-item"><a href="/index.html#contacts">Contacts</a></li>
-                                <li class="menu-flyout-contact email accent-font"><a href="mailto:1@dlux.services">1@dlux.services</a></li>
-                                <li class="menu-flyout-contact phone accent-font"><a href="tel:+118143511265">+118143511265</a></li>
+                        <ul class="flyout header__flyout-menu nobullet" id="menu">
+                                <li class="flyout__item flyout__title accent-font">Menu</li>
+                                <li class="flyout__item header__menu-item"><a href="#about" class="menu__link">About</a></li>
+                                <li class="flyout__item header__menu-item"><a href="#services" class="menu__link">Services</a></li>
+                                <li class="flyout__item header__menu-item"><a href="#founder" class="menu__link">Founder</a></li>
+                                <li class="flyout__item header__menu-item"><a href="#contacts" class="menu__link">Contacts</a></li>
+                                <li class="flyout__item flyout__contact flyout__contact_email accent-font"><a href="mailto:1@dlux.services">1@dlux.services</a></li>
+                                <li class="flyout__item flyout__contact flyout__contact_phone accent-font"><a href="tel:+118143511265">+118143511265</a></li>
                         </ul>
-                        <ul class="desktop-header-menu-list nobullet desktop-only">
-                                <li class="menu-item"><a href="/index.html#about">About</a></li>
-                                <li class="menu-item"><a href="/index.html#services">Services</a></li>
-                                <li class="menu-item"><a href="/index.html#founder">Founder</a></li>
-                                <li class="menu-item"><a href="/index.html#contacts">Contacts</a></li>                                
+                        <ul class="header__desktop-menu nobullet">
+                                <li class="header__menu-item"><a href="/index.html#about">About</a></li>
+                                <li class="header__menu-item"><a href="/index.html#services">Services</a></li>
+                                <li class="header__menu-item"><a href="/index.html#founder">Founder</a></li>
+                                <li class="header__menu-item"><a href="/index.html#contacts">Contacts</a></li>                                
                         </ul>
                     </nav>
                 </section>

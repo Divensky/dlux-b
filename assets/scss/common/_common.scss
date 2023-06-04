@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 4rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img,
+picture,
+video {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: #112b45;
+  font-family: Oxygen, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.nobullet {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.notextdecoration {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+.visually-hidden,
+.desktop-only {
+  display: none;
+}
+
+.accent-color {
+  color: #66dd8d;
+}
+h1,
+h2,
+strong,
+legend,
+.accent-font {
+  font-family: 'Poppins', Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+}
+.slim-font,
+.legal-link,
+label,
+option,
+select {
+  font-family: 'Manrope', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+strong {
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  .mobile-only,
+  .flyout-only {
+    display: none;
+  }
+
+  h2,
+  strong,
+  legend,
+  .accent-font {
+    font-weight: 700;
+  }
+}
