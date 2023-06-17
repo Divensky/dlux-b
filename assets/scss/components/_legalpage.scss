@@ -1,41 +1,48 @@
 .legal-wrapper {
-	padding: 0 16px;
-}
-.legal-section {
-	display: block;
-	color: #D4D4D4;
-	margin-top: 32px;
-	margin-bottom: 64px;
-	max-width: 895px;
-	p {
-		margin-bottom: 16px;
-	}
-	ul {
-		margin-bottom: 24px;
-		margin-left: 24px;
-	}
-	li {
-		margin-bottom: 8px;
-	}
-	a {
-		color: inherit;
-	}
-}
-.legal-title {
-	font-size: 24px;
-	line-height: 0.9;
-	color: #FFFFFF;
-	margin-bottom: 24px;
-}
-.legal-subtitle {
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 1.25;
-	margin-bottom: 24px;
+  padding: 0 16px;
 }
 
-@media screen and (min-width: 900px) { 
-	.legal-wrapper {
-		padding: 0 30px;
-	}
+.legal-section {
+  display: block;
+  max-width: 895px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+  color: #d4d4d4;
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    margin-bottom: 24px;
+    margin-left: 24px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.legal-title {
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 0.9;
+}
+
+.legal-subtitle {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 900px) {
+  .legal-wrapper {
+    padding: 0 30px;
+  }
 }

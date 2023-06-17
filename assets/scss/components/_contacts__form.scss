@@ -3,54 +3,56 @@
 }
 
 .request-form {
-  background: rgba(134, 134, 134, 0.22);
-  backdrop-filter: blur(8px);
+  background: rgb(134 134 134 / 22%);
+
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 24px;
+  backdrop-filter: blur(8px);
 }
 
 .request-form__inner {
   padding: 16px;
-  line-height: 0; /*this was needed to manually style the line-heights so they don't go out of place*/
-  font-size: 1rem; /*the font for all form fields*/
+  font-size: 1rem; /* the font for all form fields */
+  line-height: 0; /* this was needed to manually style the line-heights so they don't go out of place */
   border: none;
   accent-color: #66dd8d;
 }
 
 .request-form__title {
+  padding-top: 16px;
   font-size: 2rem;
   line-height: 0.9;
-  padding-top: 16px;
 }
 
 .contacts input,
 .contacts select,
 .contacts option {
   width: 100%;
+  padding-top: 16px;
+  padding-bottom: 4px;
+  line-height: 22px; /* px value is to match translateY below */
   background: transparent;
   border: none;
   border-bottom: solid 1px #ebebeb;
-  line-height: 22px; /*px value is to match translateY below*/
-  padding-top: 16px;
-  padding-bottom: 4px;
 }
 
 .request-form__floating-labels label {
   display: inline-block;
-  transform: translate(2px, -22px); /*translateY = line-height per design*/
-  /*floating labels ideas: https://codepen.io/team/css-tricks/pen/XVBLRM; https://dev.to/felix/floating-input-placeholders-with-html-css-ej4 */
+  transform: translate(2px, -22px); /* translateY = line-height per design */
+
+  /* floating labels ideas: https://codepen.io/team/css-tricks/pen/XVBLRM; https://dev.to/felix/floating-input-placeholders-with-html-css-ej4 */
   transition: all 0.2s ease-out;
 }
 
 .request-form__floating-labels input::placeholder {
-  opacity: 0; /*hiding it to avoid visual overload*/
+  opacity: 0; /* hiding it to avoid visual overload */
 }
 
 .request-form__floating-labels input:focus + label,
 .request-form__floating-labels input:not(:placeholder-shown) + label {
+  font-size: 0.8rem;
   transform: translate(5px, -38px);
   transition: all 0.2s ease-out;
-  font-size: 0.8rem;
 }
 
 .request-form__floating-labels input:hover + label {
@@ -64,7 +66,7 @@ input[type='datetime-local'],
 select {
   color: #66dd8d;
   font-size: 16px;
-  font-family: 'Manrope', Arial, sans-serif;
+  font-family: Manrope, Arial, sans-serif;
 }
 
 input[type='text']:focus,
@@ -77,9 +79,9 @@ input[type='email']:focus-visible,
 input[type='tel']:focus-visible,
 input[type='datetime-local']:focus-visible,
 select:focus-visible {
-  outline: #66dd8d 1px solid;
-  box-shadow: 0px 0px 2px 0px #ffffff, 0px 0px 6px 4px #66dd8d;
   border-color: transparent;
+  outline: #66dd8d 1px solid;
+  box-shadow: 0 0 2px 0 #fff, 0 0 6px 4px #66dd8d;
   transition: all 0.3s;
 }
 
@@ -89,12 +91,12 @@ label[for='datetime-field'] {
 }
 
 label[for='datetime-field']::after {
-  content: url('~/images/Icon_Calendar.svg');
-  display: inline-block;
   position: absolute;
-  pointer-events: none;
   top: -11px;
   left: 100%;
+  display: inline-block;
+  content: url('~/images/Icon_Calendar.svg');
+  pointer-events: none;
 }
 
 .request-form__floating-labels input:focus + label[for='datetime-field']::after,
@@ -107,25 +109,25 @@ label[for='datetime-field']::after {
 input[name='datetime-field']::-webkit-calendar-picker-indicator {
   filter: invert(
     1
-  ); /*не считаю необходимым подменять работающую в бразузере систему, лучше буду использовать его иконку, перекрасив её*/
+  ); /* не считаю необходимым подменять работающую в бразузере систему, лучше буду использовать его иконку, перекрасив её */
 }
 
-/* "Select" was styled based on https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html 
-    and https://web.dev/learn/forms/styling-form-controls/*/
+/* "Select" was styled based on https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html
+    and https://web.dev/learn/forms/styling-form-controls/ */
 
 .contacts select {
-  appearance: none;
   background-color: inherit;
-  background-image: url(~/images/Icon_Caret_Down_SM.svg);
+  background-image: url('~/images/Icon_Caret_Down_SM.svg');
   background-repeat: no-repeat;
   background-position: right -12px top 50%, 0 0;
   background-size: 48px auto;
+  appearance: none;
 }
 
 .contacts select:required:invalid {
+  color: #fff;
   font-size: 16px;
-  color: #ffffff;
-  line-height: 22px; /*line height within the form is fixed*/
+  line-height: 22px; /* line height within the form is fixed */
 }
 
 .contacts option {
@@ -136,7 +138,7 @@ input[name='datetime-field']::-webkit-calendar-picker-indicator {
 
 .contacts option:hover,
 .contacts option:focus {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .contacts option:active,
@@ -158,63 +160,64 @@ label[for='origin-field'] {
 }
 
 .contacts label[for='pers-data-field'] {
+  padding-left: 12px;
   font-size: 14px;
   line-height: 1.3;
-  padding-left: 12px;
 }
 
 .contacts form input[type='checkbox'] {
-  display: inline-block;
-  margin-top: 27px;
-  width: auto;
   position: relative;
+  display: inline-block;
+  width: auto;
+  margin-top: 27px;
 }
 
 .contacts form input[type='checkbox']:not(:checked) {
-  box-shadow: inset 0px 0 0px 2px #66dd8d;
+  box-shadow: inset 0 0 0 2px #66dd8d;
 }
 
 .contacts form input[type='checkbox']:checked {
   color: #66dd8d;
-  box-shadow: inset 0px 0 0px 8px #2a3f53, 0px 0 0px 1px #66dd8d;
-  /*чтобы не обнулять все автоматические браузерные стили, накладываю зелёную галочку поверх*/
+  box-shadow: inset 0 0 0 8px #2a3f53, 0 0 0 1px #66dd8d;
+
+  /* чтобы не обнулять все автоматические браузерные стили, накладываю зелёную галочку поверх */
 }
 
 .contacts form input[type='checkbox']:checked::before {
-  content: '\2713';
   position: absolute;
   top: -4px;
   left: 2px;
+  content: '\2713';
 }
 
 .contacts form .request-button {
   margin-top: 16px;
-  padding-right: calc(50vw - 10ch);
-  padding-left: calc(50vw - 10ch);
+  padding-right: calc(48vw - 10ch);
+  padding-left: calc(48vw - 10ch);
   border: none;
 }
 
 @media screen and (min-width: 900px) {
   .request-form {
-    background: rgba(104, 104, 104, 0.26);
-    border-radius: 32px;
     margin-bottom: 98px;
+    background: rgb(104 104 104 / 26%);
+    border-radius: 32px;
   }
 
   .request-form__inner {
-    padding-left: 32px;
     padding-right: 32px;
-    line-height: 0;
-    font-family: 'Oxygen', Tahoma, sans-serif;
-    font-style: normal;
+    padding-left: 32px;
     font-weight: 400;
     font-size: 24px;
+    font-family: Oxygen, Tahoma, sans-serif;
+    font-style: normal;
+    line-height: 0;
   }
 
   .request-form__title {
+    padding-top: 32px;
     font-size: min(62px, calc(46px + 16 * (50vw - 450px) / 150));
     line-height: 0.92;
-    padding-top: 32px;
   }
 
   .contacts input,
@@ -222,17 +225,17 @@ label[for='origin-field'] {
   .contacts option {
     padding-top: 24px;
     padding-bottom: 8px;
-    line-height: 30px; /*px value to match translateY below*/
+    line-height: 30px; /* px value to match translateY below */
   }
 
   .request-form__floating-labels label {
-    transform: translate(2px, -30px); /*translateY = line-height*/
+    transform: translate(2px, -30px); /* translateY = line-height */
   }
 
   .request-form__floating-labels input:focus + label,
   .request-form__floating-labels input:not(:placeholder-shown) + label {
-    transform: translate(5px, -55px);
     font-size: 0.8em;
+    transform: translate(5px, -55px);
   }
 
   input[type='text'],
@@ -241,17 +244,17 @@ label[for='origin-field'] {
   input[type='datetime-local'],
   select {
     font-size: 24px;
-    font-family: 'Oxygen', Tahoma, sans-serif;
+    font-family: Oxygen, Tahoma, sans-serif;
   }
 
   .contacts select:required:invalid {
     font-size: 24px;
-    line-height: 30px; /*px value to match translateY*/
+    line-height: 30px; /* px value to match translateY */
   }
 
   label[for='origin-field']::after {
     top: -90px;
-    left: 0px;
+    left: 0;
     background-color: #283b4e;
   }
 
@@ -263,12 +266,13 @@ label[for='origin-field'] {
   .contacts form input[type='checkbox']:checked::before {
     top: -8px;
   }
+
   .contacts form .request-button {
-    margin-top: 27px;
-    padding-right: inherit;
-    padding-left: inherit;
     display: block;
+    margin-top: 27px;
     margin-right: auto;
     margin-left: 0;
+    padding-right: inherit;
+    padding-left: inherit;
   }
 }

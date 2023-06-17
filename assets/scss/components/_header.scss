@@ -1,98 +1,106 @@
 .header {
+  background-color: rgb(17 43 69 / 80%);
   background-image: url('~/images/mask_bg_about_mobile.png'),
     url('~/images/bkgr_about_mobile.jpg');
-  background-size: cover, cover;
-  background-color: rgba(17, 43, 69, 0.8);
-  background-position: center, center;
   background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
   transition-duration: 5ms;
+
   &__inner {
     padding: 0 1rem;
+
     &:not(.no-background) {
       min-height: 100vh;
     }
   }
+
   &__top {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    position: relative;
   }
+
   &__logo-img {
     margin-top: 8px;
   }
+
   &__icon-menu-link {
     display: inline-block;
     padding: 12px;
   }
+
   &__icon-menu-img {
     margin-top: 40px;
     margin-right: 4px;
   }
 
   a {
-    text-decoration: none;
-    font: inherit;
     color: inherit;
+    text-decoration: none;
   }
 }
 
 .no-background {
-  background-image: none;
   min-height: auto;
+  background-image: none;
 }
 
 .flyout-only,
 .header__desktop-menu {
   display: none;
 }
-/*flyout styles*/
+
+/* flyout styles */
 
 .flyout {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  color: #fff;
   background: #112b45;
-  color: #ffffff;
 
   &__item {
     width: 100%;
-    text-align: left;
+    height: 53px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 22px;
-    height: 53px;
+    text-align: left;
   }
 
   &__title {
-    background: #315bef;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 0.94;
     text-align: center;
-    font-weight: 700;
+    background: #315bef;
   }
 
   &__contact {
     font-size: 1rem;
     line-height: 1.5;
+
     &_email {
-      min-height: 250px;
       display: flex;
       align-items: flex-end;
+      min-height: 250px;
       padding-bottom: 0;
     }
+
     &_phone {
       align-self: flex-end;
     }
   }
 
   .header__menu-item:not(:first-child) {
-    border-top: solid 1px rgba(255, 255, 255, 0.17);
+    border-top: solid 1px rgb(255 255 255 / 17%);
   }
 }
 
-/*end of flyout styles*/
+/* end of flyout styles */
 
 .header__menu-item a:hover,
 .header__menu-item a:active,
@@ -102,22 +110,25 @@
 
 .hero-section {
   &__title {
+    margin-bottom: 18px;
     padding-top: calc(48vh - 83px);
     font-size: 2rem;
     line-height: 0.9;
-    margin-bottom: 18px;
   }
+
   &__item {
     margin-bottom: 12px;
-  }
-  &__item:last-child {
-    margin-bottom: 26px;
-  }
-  &__item::before {
-    content: url('~/images/Icon_Octagon_Check-min.svg');
-    padding-right: 18px;
-    display: inline-block;
-    vertical-align: middle;
+
+    &:last-child {
+      margin-bottom: 26px;
+    }
+
+    &::before {
+      display: inline-block;
+      padding-right: 18px;
+      vertical-align: middle;
+      content: url('~/images/Icon_Octagon_Check-min.svg');
+    }
   }
 }
 
@@ -129,11 +140,13 @@
     &__inner {
       padding: 0 2rem;
     }
+
     &__desktop-menu {
       display: inline-flex;
       flex-wrap: wrap;
       margin-top: 21px;
     }
+
     &__menu-item {
       &:not(:last-child) {
         margin-right: 32px;
@@ -142,16 +155,16 @@
   }
 
   .no-background {
-    background-image: none;
     min-height: auto;
+    background-image: none;
   }
 
   .hero-section__title {
+    margin: 0;
+    margin-bottom: 26px;
     padding-top: calc((100vh - 254px) / 2 - 112px);
     font-size: 2.25rem;
     line-height: 1.5;
-    margin: 0;
-    margin-bottom: 26px;
   }
 
   .hero-section__item:last-child {

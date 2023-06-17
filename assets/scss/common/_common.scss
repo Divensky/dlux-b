@@ -3,45 +3,53 @@ html {
   scroll-behavior: smooth;
   scroll-padding: 4rem;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 img,
 picture,
 video {
   max-width: 100%;
   height: auto;
 }
+
 body {
-  background-color: #112b45;
-  font-family: Oxygen, Tahoma, sans-serif;
-  font-style: normal;
+  margin: 0 auto;
+  color: #fff;
   font-weight: 400;
   font-size: 1rem;
+  font-family: Oxygen, Tahoma, sans-serif;
+  font-style: normal;
   line-height: 1.25;
-  color: #ffffff;
-  margin: 0 auto;
+  background-color: #112b45;
 }
+
 .container {
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
 }
+
 .wrapper {
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
 }
+
 .nobullet {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
+
 .notextdecoration {
-  text-decoration: none;
-  font: inherit;
   color: inherit;
+  font: inherit;
+  text-decoration: none;
 }
+
 .visually-hidden,
 .desktop-only {
   display: none;
@@ -50,24 +58,26 @@ body {
 .accent-color {
   color: #66dd8d;
 }
+
 h1,
 h2,
 strong,
 legend,
 .accent-font {
-  font-family: 'Poppins', Verdana, sans-serif;
-  font-style: normal;
   font-weight: 600;
+  font-family: Poppins, Verdana, sans-serif;
+  font-style: normal;
   letter-spacing: -0.06em;
 }
+
 .slim-font,
 .legal-link,
 label,
 option,
 select {
-  font-family: 'Manrope', Arial, sans-serif;
-  font-style: normal;
   font-weight: 400;
+  font-family: Manrope, Arial, sans-serif;
+  font-style: normal;
 }
 
 strong {

@@ -1,7 +1,8 @@
+@import '~mmenu-js/dist/mmenu.css';
+
 //общие классы
 @import 'common/fonts';
 @import 'common/common';
-@import '-mmenu/mmenu.css';
 @import 'common/animation';
 
 //header: навигация и текст
@@ -11,14 +12,9 @@
 @import 'components/section-about';
 @import 'components/section-services';
 @import 'components/section-founder';
-
 @import 'components/section-contacts';
 @import 'components/contacts__form';
 //footer
 @import 'components/footer';
 //страница юридической информации
 @import 'components/legalpage';
-
-
-
-
