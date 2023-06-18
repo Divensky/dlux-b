@@ -5,7 +5,7 @@
   font-style: normal;
   src: url('~/fonts/oxygen-v15-latin-regular.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url('~/fonts/oxygen-v15-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('~/fonts/oxygen-v15-latin-regular.woff') format('woff');
   font-display: swap;
 }
 
@@ -16,7 +16,7 @@
   font-style: normal;
   src: url('~/fonts/oxygen-v15-latin-700.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url('~/fonts/oxygen-v15-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('~/fonts/oxygen-v15-latin-700.woff') format('woff');
   font-display: swap;
 }
 
@@ -25,10 +25,9 @@
   font-weight: 600;
   font-family: Poppins;
   font-style: normal;
-  src: url('~/fonts/poppins-v20-latin-600.woff2') format('woff2'),
-    /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url('~/fonts/poppins-v20-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-display: swap;
+  src: url('~/fonts/poppins-v20-latin-600.woff2') format('woff2'),
+    url('~/fonts/poppins-v20-latin-600.woff') format('woff');
 }
 
 /* poppins-700 - latin */
@@ -36,10 +35,10 @@
   font-weight: 700;
   font-family: Poppins;
   font-style: normal;
+  font-display: swap;
   src: url('~/fonts/poppins-v20-latin-700.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
       url('~/fonts/poppins-v20-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
 }
 
 /* manrope-regular - latin */
@@ -47,8 +46,8 @@
   font-weight: 400;
   font-family: Manrope;
   font-style: normal;
+  font-display: swap;
   src: url('~/fonts/manrope-v13-latin-regular.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+ */
       url('~/fonts/manrope-v13-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  font-display: swap;
 }

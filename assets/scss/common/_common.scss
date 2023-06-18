@@ -76,6 +76,10 @@ strong {
   display: block;
 }
 
+.section-header {
+  font-size: 48px;
+}
+
 @media screen and (min-width: 900px) {
   .mobile-only,
   .flyout-only {
@@ -87,5 +91,18 @@ strong {
   legend,
   .accent-font {
     font-weight: 700;
+  }
+
+  .section-header {
+    font-size: min(128px, calc(81px + 47 * (42vw - 360px) / 195));
+    line-height: 0.9;
+
+    /* This is the fluid header for the sections with a large-font header
+      calc(81px + (128-81) * (42vw - 360px) / (555 - 360));
+      81px: min font size at body width 900, column w 360
+      128px: max font size at body width 1200, column w 555
+      360px: min text box size
+      555px: max text box size
+      Formula from: https://www.smashingmagazine.com/2016/05/fluid-typography/ */
   }
 }

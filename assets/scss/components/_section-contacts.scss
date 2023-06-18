@@ -1,63 +1,57 @@
-.contacts {
+.contacts-section {
   &__inner {
     padding: 0 16px;
   }
-}
 
-.contact-info-wrapper {
-  position: relative;
-}
+  &__info-wrapper {
+    position: relative;
+  }
 
-.contacts-section__title {
-  margin-top: 101px;
-  font-size: 0;
-}
+  &__title {
+    margin-top: 58px;
+    opacity: 0;
+  }
 
-.contacts a {
-  display: block;
-  padding-bottom: 13px;
-  font-size: 24px;
-  line-height: 0.92;
-  text-align: center;
-}
+  &__link {
+    display: block;
+    padding-bottom: 13px;
+    font-size: 24px;
+    line-height: 0.92;
+    text-align: center;
 
-.contacts a:last-child {
-  padding-bottom: 24px;
+    &:last-child {
+      padding-bottom: 24px;
+    }
+  }
 }
 
 @media screen and (min-width: 900px) {
-  .contacts__inner {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    gap: min(30px, calc(9px + 21 * (100vw - 890px) / 310));
-    padding: 0 30px;
-  }
-
   .contact-info-wrapper,
   .request-form {
     margin-top: 200px;
   }
 
-  .contacts-section__title {
-    margin-top: 362px;
-    margin-bottom: 64px;
-    font-size: min(128px, calc(81px + 47 * (42vw - 360px) / 195));
+  .contacts-section {
+    &__inner {
+      display: grid;
+      grid-template-columns: 0.8fr 1fr;
+      gap: min(30px, calc(9px + 21 * (100vw - 890px) / 310));
+      padding: 0 30px;
+    }
 
-    /*
-      calc(81px + (128-81) * (42vw - 360px) / (555 - 360));
-      81px: min font size at body width 900, column w 360
-      128px: max font size at body width 1200, column w 555
-      360px: min text box size
-      555px: max text box size
-      Formula from: https://www.smashingmagazine.com/2016/05/fluid-typography/ */
-  }
+    &__title {
+      margin-top: 362px;
+      margin-bottom: 64px;
+      opacity: 1;
+    }
 
-  .contacts a {
-    padding-bottom: 32px;
-    font-size: min(64px, calc(40px + 24 * (42vw - 360px) / 195));
+    &__link {
+      padding-bottom: 32px;
+      font-size: min(64px, calc(40px + 24 * (42vw - 360px) / 195));
 
-    /* calc(40px + (64-40) * (42vw - 360px) / (555 - 360)); */
-    line-height: 0.92;
-    text-align: left;
+      /* calc(40px + (64-40) * (42vw - 360px) / (555 - 360)); */
+      line-height: 0.92;
+      text-align: left;
+    }
   }
 }

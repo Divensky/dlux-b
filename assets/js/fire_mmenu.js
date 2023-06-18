@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       },
     }
-  ); // eslint-disable-line no-unused-vars
+  );
 });
