@@ -1,48 +1,49 @@
-.legal-wrapper {
+.container-legal {
   padding: 0 16px;
 }
 
-.legal-section {
+.legal {
   display: block;
   max-width: 895px;
   margin-top: 32px;
   margin-bottom: 64px;
   color: #d4d4d4;
 
-  p {
+  &__title {
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 0.9;
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: Oxygen, Tahoma, sans-serif;
+    line-height: 1.25;
+  }
+
+  &__text {
     margin-bottom: 16px;
   }
 
-  ul {
+  &__list {
     margin-bottom: 24px;
     margin-left: 24px;
   }
 
-  li {
+  &__item {
     margin-bottom: 8px;
   }
 
-  a {
+  &__link {
     color: inherit;
   }
 }
 
-.legal-title {
-  margin-bottom: 24px;
-  color: #fff;
-  font-size: 24px;
-  line-height: 0.9;
-}
-
-.legal-subtitle {
-  margin-bottom: 24px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25;
-}
-
 @media screen and (min-width: 900px) {
-  .legal-wrapper {
+  .container-legal {
     padding: 0 30px;
   }
 }

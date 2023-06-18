@@ -1,51 +1,8 @@
 
         <header id="main-header" class="header">
             <div class="container header__inner">
-                <section class="header__top">
-                    <a class="header__logo-link" href="#about">
-                        <picture>
-                            <source media="(max-width: 899px)" 
-                                srcset="{{ '/images/logo_header_mobile1x.png' | url }} 1x, {{ '/images/logo_header_mobile2x.png' | url }} 2x, {{ '/images/logo_header_mobile3x.png' | url }} 3x" 
-                                width="114" height="75" 
-                                />
-                            <source media="(min-width: 900px)" 
-                                srcset="{{ '/images/logo_header_desktop1x.png' | url }} 1x, {{ '/images/logo_header_desktop2x.png' | url }} 2x, {{ '/images/logo_header_desktop3x.png' | url }} 3x" 
-                                width="159" height="104" 
-                                />
-                        
-                            <img src="{{ '/images/logo_header_desktop1x.png' | url }}" 
-                               alt="dLux Services" 
-                                class="header__logo-img" 
-                                />
 
-                        </picture>
-                    </a>
-                        
-                    <nav class="header__nav">
-                        <a href="#menu" class="header__icon-menu-link mobile-only" id="toggle">
-                            <img src="{{ '/images/icon_menu.svg' | url }}" alt="Menu" 
-                                class="header__icon-menu-img mobile-only"
-                                width="14" height="10" />
-                            <!-- "icon_exit_menu.svg" replaced it through toggle js before mmenu --> 
-                        </a>
-                                        
-                        <ul class="flyout header__flyout-menu nobullet" id="menu">
-                                <li class="flyout__item flyout__title accent-font">Menu</li>
-                                <li class="flyout__item header__menu-item"><a href="#about" class="menu__link">About</a></li>
-                                <li class="flyout__item header__menu-item"><a href="#services" class="menu__link">Services</a></li>
-                                <li class="flyout__item header__menu-item"><a href="#founder" class="menu__link">Founder</a></li>
-                                <li class="flyout__item header__menu-item"><a href="#contacts" class="menu__link">Contacts</a></li>
-                                <li class="flyout__item flyout__contact flyout__contact_email accent-font"><a href="mailto:1@dlux.services">1@dlux.services</a></li>
-                                <li class="flyout__item flyout__contact flyout__contact_phone accent-font"><a href="tel:+118143511265">+118143511265</a></li>
-                        </ul>
-                        <ul class="header__desktop-menu nobullet">
-                                <li class="header__menu-item"><a href="#about" class="menu__link">About</a></li>
-                                <li class="header__menu-item"><a href="#services" class="menu__link">Services</a></li>
-                                <li class="header__menu-item"><a href="#founder" class="menu__link">Founder</a></li>
-                                <li class="header__menu-item"><a href="#contacts" class="menu__link">Contacts</a></li>                                
-                        </ul>
-                    </nav>
-                </section>
+	    {% include 'utils/header_top.njk' %}
 
                 <section class="hero-section">
                     <h1 class="hero-section__title">Cloud software development</h1>
