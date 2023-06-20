@@ -1,4 +1,4 @@
-.contacts-section {
+.section-contacts {
   &__inner {
     padding: 0 16px;
   }
@@ -23,20 +23,22 @@
       padding-bottom: 24px;
     }
   }
-}
 
-@media screen and (min-width: 900px) {
-  .contact-info-wrapper,
-  .request-form {
-    margin-top: 200px;
+  &__form {
+    margin-bottom: 33px;
   }
 
-  .contacts-section {
+  @media screen and (min-width: 900px) {
     &__inner {
       display: grid;
       grid-template-columns: 0.8fr 1fr;
       gap: min(30px, calc(9px + 21 * (100vw - 890px) / 310));
       padding: 0 30px;
+    }
+
+    &__info-wrapper,
+    &__form {
+      margin-top: 200px;
     }
 
     &__title {
@@ -52,6 +54,10 @@
       /* calc(40px + (64-40) * (42vw - 360px) / (555 - 360)); */
       line-height: 0.92;
       text-align: left;
+    }
+
+    &__form {
+      margin-bottom: 98px;
     }
   }
 }

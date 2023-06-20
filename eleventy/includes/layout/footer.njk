@@ -1,81 +1,93 @@
-        <footer class="footer-nav">
-            <div class="container footer__inner wrapper footer-wrapper">
-                <div class="footer-top">
-                    <ul class="footer-menu-list nobullet">
-                        <li class="menu-item"><a href="/index.html#about">About</a></li>
-                        <li class="menu-item"><a href="/index.html#services">Services</a></li>
-                        <li class="menu-item"><a href="/index.html#founder">Founder</a></li>
-                        <li class="menu-item"><a href="/index.html#contacts">Contacts</a></li>
-                    </ul>
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <ul class="footer__menu-list nobullet">
+        <li class="footer__menu-item"><a href="/index.html#about">About</a></li>
+        <li class="footer__menu-item"><a href="/index.html#services">Services</a></li>
+        <li class="footer__menu-item"><a href="/index.html#founder">Founder</a></li>
+        <li class="footer__menu-item"><a href="/index.html#contacts">Contacts</a></li>
+      </ul>
 
-                    <div class="footer-social">
-                        <strong class="social-media-title accent-font">Social media</strong>
-                        <div class="social-icons">
-                            <a href="#" class="button-social">
-                                <svg class="icon-social icon_facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
-                                    <use href="{{ '/assets/sprite.svg#icon_facebook' | url }}" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-social">
-                                <svg class="icon-social icon_instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
-                                    <use href="{{ '/assets/sprite.svg#icon_instagram' | url }}" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-social">
-                                <svg class="icon-social icon_facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
-		    <use href="{{ '/assets/sprite.svg#icon_twitter' | url }}" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-social">
-                                <svg class="icon-social icon_linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
-		    <use href="{{ '/assets/sprite.svg#icon_linkedin' | url }}" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-social">
-                                <svg class="icon-social icon_telegram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
-		    <use href="{{ '/assets/sprite.svg#icon_telegram' | url }}" />
-                                </svg>
-                            </a>
-                            <a href="#" class="button-social">
-                                <svg class="icon-social icon_whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
-		    <use href="{{ '/assets/sprite.svg#icon_whatsapp' | url }}" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="footer__social">
+        <strong class="footer__social-media-title accent-font">Social media</strong>
+        <div class="footer__social-icons">
+          <a href="#" class="footer__button-social">
+            <svg class="footer__icon-social icon_facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                 width="12"
+                 height="12">
+              <use href="{{ '/assets/sprite.svg#icon_facebook' | url }}"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__button-social">
+            <svg class="footer__icon-social icon_instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                 width="12"
+                 height="12">
+              <use href="{{ '/assets/sprite.svg#icon_instagram' | url }}"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__button-social">
+            <svg class="footer__icon-social icon_facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                 width="12"
+                 height="12">
+              <use href="{{ '/assets/sprite.svg#icon_twitter' | url }}"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__button-social">
+            <svg class="footer__icon-social icon_linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                 width="12"
+                 height="12">
+              <use href="{{ '/assets/sprite.svg#icon_linkedin' | url }}"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__button-social">
+            <svg class="footer__icon-social icon_telegram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                 width="12"
+                 height="12">
+              <use href="{{ '/assets/sprite.svg#icon_telegram' | url }}"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__button-social">
+            <svg class="footer__icon-social icon_whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                 width="12"
+                 height="12">
+              <use href="{{ '/assets/sprite.svg#icon_whatsapp' | url }}"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
 
-                <div class="footer-legal accent-color">
-                    <a href="/privacy.html" class="legal-link">Privacy Policy</a>
-                    <a href="/pers_data.html" class="legal-link">Rules for the processing of personal data</a>
-                    <a href="/terms.html" class="legal-link">Website Terms of Use</a>
-                    <!-- в дизайне для мобильных только одна из этих строчек, а не все три. Думаю, что это ошибка и все три нужны. Но если я неправа, легко добавить visually-hidden -->
-                </div>
+    <div class="footer__legal-links-container accent-color">
+      <a href="/privacy.html" class="footer__legal-link slim-font">Privacy Policy</a>
+      <a href="/pers_data.html" class="footer__legal-link slim-font">Rules for the processing of personal data</a>
+      <a href="/terms.html" class="footer__legal-link slim-font">Website Terms of Use</a>
+    </div>
 
-                <a class="logo-link" href="/index.html#about">
+    <a class="footer__logo-link" href="/index.html#about">
 
-                    <picture>
-                        <source media="(max-width: 899px)"
-                            srcset="{{ '/images/logo-footer-mobile.svg' | url }}"
-                            width="218" height="109"
-                            />
-                        <source media="(min-width: 900px)"
-                            srcset="{{ '/images/logo-footer-desktop.svg' | url }}"
-                            width="249" height="125"
-                            />
+      <picture>
+        <source media="(max-width: 899px)"
+                srcset="{{ '/images/logo-footer-mobile.svg' | url }}"
+                width="218" height="109"
+        />
+        <source media="(min-width: 900px)"
+                srcset="{{ '/images/logo-footer-desktop.svg' | url }}"
+                width="249" height="125"
+        />
 
-                        <img src="{{ '/images/logo_footer_desktop1x.png' | url }}"
-                            alt="dLux Services"
-                            class="logo-img"
-                            loading="lazy"
-                            />
+        <img src="{{ '/images/logo_footer_desktop1x.png' | url }}"
+             alt="dLux Services"
+             class="footer__logo-img"
+             loading="lazy"
+        />
 
-                    </picture>
-                </a>
+      </picture>
+    </a>
 
-                <div class="footer-slogan">
-                    <b class="footer-slogan-text accent-font">20 years of high performance <span class="accent-color">cloud based development</span> experience</b>
-                </div>
-                <!--  <p class="copyright visually-hidden">&copy;2022 Created by Upline Studio</p>-->
-            </div>
-        </footer>
+    <div class="footer__slogan-container">
+      <b class="footer__slogan-text accent-font">20 years of high performance <span class="accent-color">cloud based development</span>
+        experience</b>
+    </div>
+    <!--  <p class="copyright visually-hidden">&copy;2022 Created by Upline Studio</p>-->
+  </div>
+</footer>

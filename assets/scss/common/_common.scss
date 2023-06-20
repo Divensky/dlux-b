@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding: 4rem;
+  scroll-padding: 64px;
 }
 
 *,
@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   color: #fff;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
   font-family: Oxygen, Tahoma, sans-serif;
   font-style: normal;
   line-height: 1.25;
@@ -65,8 +65,7 @@ legend,
   letter-spacing: -0.06em;
 }
 
-.slim-font,
-.legal-link {
+.slim-font {
   font-weight: 400;
   font-family: Manrope, Arial, sans-serif;
   font-style: normal;
@@ -78,11 +77,11 @@ strong {
 
 .section-header {
   font-size: 48px;
+  line-height: 0.9;
 }
 
 @media screen and (min-width: 900px) {
-  .mobile-only,
-  .flyout-only {
+  .mobile-only {
     display: none;
   }
 
@@ -95,7 +94,6 @@ strong {
 
   .section-header {
     font-size: min(128px, calc(81px + 47 * (42vw - 360px) / 195));
-    line-height: 0.9;
 
     /* This is the fluid header for the sections with a large-font header
       calc(81px + (128-81) * (42vw - 360px) / (555 - 360));

@@ -1,22 +1,22 @@
-.container-legal {
-  padding: 0 16px;
-}
-
-.legal {
+.legalpage {
   display: block;
   max-width: 895px;
   margin-top: 32px;
   margin-bottom: 64px;
   color: #d4d4d4;
 
-  &__title {
+  &__container {
+    padding: 0 16px;
+  }
+
+  h1 {
     margin-bottom: 24px;
     color: #fff;
     font-size: 24px;
     line-height: 0.9;
   }
 
-  &__subtitle {
+  h2 {
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 24px;
@@ -24,26 +24,26 @@
     line-height: 1.25;
   }
 
-  &__text {
+  p {
     margin-bottom: 16px;
   }
 
-  &__list {
+  ul {
     margin-bottom: 24px;
     margin-left: 24px;
   }
 
-  &__item {
+  li {
     margin-bottom: 8px;
   }
 
-  &__link {
+  a {
     color: inherit;
   }
-}
 
-@media screen and (min-width: 900px) {
-  .container-legal {
-    padding: 0 30px;
+  @media screen and (min-width: 900px) {
+    &__container {
+      padding: 0 30px;
+    }
   }
 }

@@ -1,4 +1,4 @@
-.founder-section {
+.section-founder {
   &__inner {
     position: relative;
     display: flex;
@@ -26,7 +26,7 @@
     position: relative;
     margin-top: 58px;
     margin-bottom: 8px;
-    font-size: 3rem;
+    font-size: 48px;
     line-height: 0.9;
   }
 
@@ -41,41 +41,18 @@
     margin: 0 auto;
     text-align: center;
   }
-}
 
-.clouds-wrapper {
-  position: absolute;
-  left: 0;
-  width: min(100vw, 1200px);
-  height: 950px;
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
-.clouds {
-  position: absolute;
-  top: 300px;
-  left: -300px;
-  display: block;
-  width: 1021px;
-  height: 539px;
-  overflow-x: hidden;
-  background: url('~/images/bkgr_contacts_white-clouds.png') no-repeat center;
-  background-size: cover;
-  transform: rotate(21.85deg);
-  opacity: 0.7;
-}
-
-.founder img {
-  position: relative;
-  z-index: 2;
-  max-width: 100%;
-  height: auto;
-  border-radius: 24px;
+  &__img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
 }
 
 @media screen and (min-width: 900px) {
-  .founder-section {
+  .section-founder {
     &__inner {
       flex-direction: row;
       padding: 0 30px;
@@ -111,36 +88,18 @@
       min-width: 44%;
       margin-top: 200px;
     }
-  }
 
-  .decorative-line-founder {
-    position: absolute;
-    top: calc(293px + 23%);
-    left: min(470px, calc(195px + 200 * (100vw - 900px) / (1200 - 900)));
-    z-index: -1;
-    content: url('~/images/decorative_3founder_desktop.svg');
-  }
+    &__img {
+      width: auto;
+      height: auto;
+    }
 
-  .clouds-wrapper {
-    left: 15%;
-    width: 100vw;
-    height: 1400px;
-    overflow-x: visible;
-  }
-
-  .clouds {
-    top: 545px;
-    left: -40%;
-    width: 100%;
-    height: 713px;
-    overflow-x: visible;
-    background-size: contain;
-    transform: none;
-    opacity: 1;
-  }
-
-  .founder img {
-    width: auto;
-    height: auto;
+    &__decorative-line {
+      position: absolute;
+      top: calc(293px + 23%);
+      left: min(470px, calc(195px + 200 * (100vw - 900px) / (1200 - 900)));
+      z-index: -1;
+      content: url('~/images/decorative_3founder_desktop.svg');
+    }
   }
 }

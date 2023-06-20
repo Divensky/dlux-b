@@ -1,0 +1,42 @@
+.clouds-wrapper {
+  position: absolute;
+  left: 0;
+  width: min(100vw, 1200px);
+  height: 950px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.clouds {
+  position: absolute;
+  top: 300px;
+  left: -300px;
+  display: block;
+  width: 1021px;
+  height: 539px;
+  overflow-x: hidden;
+  background: url('~/images/bkgr_contacts_white-clouds.png') no-repeat center;
+  background-size: cover;
+  transform: rotate(21.85deg);
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 900px) {
+  .clouds-wrapper {
+    left: 15%;
+    width: 100vw;
+    height: 1400px;
+    overflow-x: visible;
+  }
+
+  .clouds {
+    top: 545px;
+    left: -40%;
+    width: 100%;
+    height: 713px;
+    overflow-x: visible;
+    background-size: contain;
+    transform: none;
+    opacity: 1;
+  }
+}

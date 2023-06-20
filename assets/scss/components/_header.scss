@@ -8,7 +8,7 @@
   transition-duration: 5ms;
 
   &__inner {
-    padding: 0 1rem;
+    padding: 0 16px;
 
     &:not(.no-background) {
       min-height: 100vh;
@@ -60,90 +60,13 @@
   background-image: none;
 }
 
-.flyout-only {
-  display: none;
-}
-
-/* flyout styles */
-
-.flyout {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  color: #fff;
-  background: #112b45;
-
-  &__item {
-    width: 100%;
-    height: 53px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 22px;
-    text-align: left;
-
-    &_bordered {
-      border-top: solid 1px rgb(255 255 255 / 17%);
-    }
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 0.94;
-    text-align: center;
-    background: #315bef;
-  }
-
-  &__contact {
-    font-size: 1rem;
-    line-height: 1.5;
-
-    &_email {
-      display: flex;
-      align-items: flex-end;
-      min-height: 250px;
-      padding-bottom: 0;
-    }
-
-    &_phone {
-      align-self: flex-end;
-    }
-  }
-}
-
-/* end of flyout styles */
-
-.hero-section {
-  &__title {
-    margin-bottom: 18px;
-    padding-top: calc(48vh - 83px);
-    font-size: 2rem;
-    line-height: 0.9;
-  }
-
-  &__item {
-    margin-bottom: 12px;
-
-    &:last-child {
-      margin-bottom: 26px;
-    }
-
-    &::before {
-      display: inline-block;
-      padding-right: 18px;
-      vertical-align: middle;
-      content: url('~/images/Icon_Octagon_Check-min.svg');
-    }
-  }
-}
-
 @media screen and (min-width: 900px) {
   .header {
     background-image: url('~/images/mask_bg_about_mobile.png'),
       url('~/images/bkgr_about_desktop.jpg');
 
     &__inner {
-      padding: 0 2rem;
+      padding: 0 32px;
     }
 
     &__desktop-menu {
@@ -162,21 +85,5 @@
   .no-background {
     min-height: auto;
     background-image: none;
-  }
-
-  .hero-section {
-    &__title {
-      margin: 0;
-      margin-bottom: 26px;
-      padding-top: calc((100vh - 254px) / 2 - 112px);
-      font-size: 2.25rem;
-      line-height: 1.5;
-    }
-
-    &__item {
-      &:last-child {
-        margin-bottom: 34px;
-      }
-    }
   }
 }
