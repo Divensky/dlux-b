@@ -90,10 +90,12 @@
       transform: scale(0);
     }
 
-    &[name='datetime-field']::-webkit-calendar-picker-indicator {
-      filter: invert(
-        1
-      ); /* не считаю необходимым подменять работающую в бразузере систему, лучше буду использовать его иконку, перекрасив её */
+    &_with-calendar {
+      &::-webkit-calendar-picker-indicator {
+        filter: invert(
+          1
+        ); /* не считаю необходимым подменять работающую в бразузере систему, лучше буду использовать его иконку, перекрасив её */
+      }
     }
   }
 

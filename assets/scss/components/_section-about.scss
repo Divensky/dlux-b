@@ -1,6 +1,4 @@
 .section-about {
-  margin-top: 64px;
-
   &__inner {
     position: relative;
   }
@@ -9,7 +7,7 @@
     position: relative;
     display: block;
     min-height: 160px;
-    margin: 0 16px 24px;
+    margin: 64px 16px 24px;
     background: url('~/images/bkgr_marketing.jpg') #112b45 no-repeat center;
     background-size: cover;
     border-radius: 300px;
@@ -55,12 +53,10 @@
   }
 
   @media screen and (min-width: 900px) {
-    margin-top: 120px;
-
     &__image {
       position: relative;
       min-height: 362px;
-      margin: 0 30px -24px;
+      margin: 120px 30px -24px;
       border-radius: 220px;
 
       &::before,
