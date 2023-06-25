@@ -13,6 +13,11 @@
     &:not(.no-background) {
       min-height: 100vh;
     }
+
+    &.no-background {
+      min-height: auto;
+      background-image: none;
+    }
   }
 
   &__top {
@@ -47,26 +52,29 @@
   }
 
   &__menu-item {
-    a:hover,
-    a:active,
-    a:focus {
+    &:hover,
+    &:active,
+    &:focus {
       color: #66dd8d;
     }
   }
-}
 
-.no-background {
-  min-height: auto;
-  background-image: none;
-}
+  &.no-background {
+    min-height: auto;
+    background-image: none;
+  }
 
-@media screen and (min-width: 900px) {
-  .header {
+  @media screen and (min-width: 900px) {
     background-image: url('~/images/mask_bg_about_mobile.png'),
       url('~/images/bkgr_about_desktop.jpg');
 
     &__inner {
       padding: 0 32px;
+
+      &.no-background {
+        min-height: auto;
+        background-image: none;
+      }
     }
 
     &__desktop-menu {
@@ -80,10 +88,10 @@
         margin-right: 32px;
       }
     }
-  }
 
-  .no-background {
-    min-height: auto;
-    background-image: none;
+    &.no-background {
+      min-height: auto;
+      background-image: none;
+    }
   }
 }

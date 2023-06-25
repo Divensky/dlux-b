@@ -57,8 +57,8 @@ permalink: index.html
       <span class="section-founder__decorative-line"></span>
       <p class="section-founder__text">Balazs, 20 years experience in cloud development, leader and contributor of many
         projects with billions of users as a senior Google</p>
-      <div class="clouds-wrapper">
-        <div class="clouds"></div>
+      <div class="clouds">
+        <div class="clouds__inner"></div>
       </div>
       <div class="section-founder__img-wrapper">
         <picture>
@@ -118,7 +118,6 @@ permalink: index.html
             <input type="text" onfocus="(this.type='datetime-local')" onblur="(this.type='text')" name="datetime-field"
                    id="datetime-field" placeholder="When is a good time to call"
                    class="form__input input form__input_with-calendar"/>
-            <!-- https://www.geeksforgeeks.org/how-to-set-placeholder-value-for-input-type-date-in-html-5/ -->
             <label for="datetime-field"
                    class="form__label form__label_floating form__label_calendar label-with-calendar">When
               is a good
@@ -132,7 +131,7 @@ permalink: index.html
             <label for="what-field" class="form__label form__label_floating">What can we help you
               with?</label>
           </div>
-          <select name="origin-field" id="origin-field" class="form__select select" required>
+          <select name="origin-field" id="origin-field" class="form__select select input" required>
             <option value="" class="form__option form__option_pseudo-label" disabled selected>How did you find us?
             </option>
             <option value="Friends" class="form__option">Friends</option>

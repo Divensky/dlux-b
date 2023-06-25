@@ -35,12 +35,7 @@
   &__label {
     &_floating {
       display: inline-block;
-      transform: translate(
-        2px,
-        -22px
-      ); /* translateY = line-height per design */
-
-      /* floating labels ideas: https://codepen.io/team/css-tricks/pen/XVBLRM; https://dev.to/felix/floating-input-placeholders-with-html-css-ej4 */
+      transform: translate(2px, -22px); /* translateY = line-height */
       transition: all 0.2s ease-out;
     }
 
@@ -94,13 +89,10 @@
       &::-webkit-calendar-picker-indicator {
         filter: invert(
           1
-        ); /* не считаю необходимым подменять работающую в бразузере систему, лучше буду использовать его иконку, перекрасив её */
+        ); /* чтобы не подменять работающую в бразузере систему, использую бразуерную иконку, перекрасив её */
       }
     }
   }
-
-  /* "Select" was styled based on https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html
-      and https://web.dev/learn/forms/styling-form-controls/ */
 
   &__select {
     background-color: inherit;
@@ -230,7 +222,7 @@
       margin-left: -6px;
 
       &:checked::before {
-        top: -8px;
+        top: -4px;
       }
     }
 
