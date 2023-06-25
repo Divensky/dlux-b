@@ -1,0 +1,46 @@
+      <form action="#" method="post" name="request-form" id="request-form" class="form section-contacts__form">
+        <fieldset class="form__inner slim-font">
+          <legend class="form__title accent-font">
+            Send <span class="accent-color">a request</span>
+          </legend>
+          <div class="form__floating-labels">
+            <input type="text" name="name-field" id="name-field" placeholder="Name" class="form__input input"/>
+            <label for="name-field" class="form__label form__label_floating">Name</label>
+            <input type="text" name="company-field" id="company-field" placeholder="Company"
+                   class="form__input input"/>
+            <label for="company-field" class="form__label form__label_floating">Company</label>
+            <input type="tel" name="phone-field" id="phone-field" placeholder="Callback phone number"
+                   class="form__input input"/>
+            <label for="phone-field" class="form__label form__label_floating">Callback phone
+              number</label>
+            <input type="text" onfocus="(this.type='datetime-local')" onblur="(this.type='text')" name="datetime-field"
+                   id="datetime-field" placeholder="When is a good time to call"
+                   class="form__input input form__input_with-calendar"/>
+            <label for="datetime-field"
+                   class="form__label form__label_floating form__label_calendar label-with-calendar">When
+              is a good
+              time to
+              call</label>
+            <input type="email" name="email-field" id="email-field" placeholder="Email" class="form__input input"
+                   required/>
+            <label for="email-field" class="form__label form__label_floating">Email</label>
+            <input type="text" name="what-field" id="what-field" placeholder="What can we help you with?"
+                   class="form__input input"/>
+            <label for="what-field" class="form__label form__label_floating">What can we help you
+              with?</label>
+          </div>
+          <select name="origin-field" id="origin-field" class="form__select select input" required>
+            <option value="" class="form__option form__option_pseudo-label" disabled selected>How did you find us?
+            </option>
+            <option value="Friends" class="form__option">Friends</option>
+            <option value="Search" class="form__option">Search</option>
+            <option value="Social media" class="form__option">Social media</option>
+            <option value="Other" class="form__option">Other</option>
+          </select>
+          <label for="origin-field" class="form__label_no-floating">How did you find us?</label>
+          <input type="checkbox" name="pers-data-field" id="pers-data-field" class="form__checkbox" checked/>
+          <label for="pers-data-field" class="form__label_checkbox">I agree with the personal data processing
+            policy</label>
+          <button class="form__button button narrow" type="submit">Send a request</button>
+        </fieldset>
+      </form>
