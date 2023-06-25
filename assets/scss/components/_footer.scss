@@ -109,58 +109,56 @@
   }
 
   @media screen and (min-width: 900px) {
-    & {
-      background: url('~/images/symbol_white1_footer_desktop.png') #081d31
-        no-repeat center;
-      background-size: contain;
+    background: url('~/images/symbol_white1_footer_desktop.png') #081d31
+      no-repeat center;
+    background-size: contain;
 
-      &__inner {
-        align-content: space-between;
-        align-items: center;
-        padding: 0 30px;
-      }
+    &__inner {
+      align-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
 
-      &__top {
-        margin-top: 32px;
-        margin-bottom: 169px;
-      }
+    &__top {
+      margin-top: 32px;
+      margin-bottom: 169px;
+    }
 
-      &__menu-item {
-        display: inline-block;
-        margin-right: 32px;
-      }
+    &__menu-item {
+      display: inline-block;
+      margin-right: 32px;
+    }
 
-      &__social-media-title {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.5;
-        text-align: right;
-      }
+    &__social-media-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.5;
+      text-align: right;
+    }
 
-      &__button-social {
-        width: 48px;
-        height: 48px;
-      }
+    &__button-social {
+      width: 48px;
+      height: 48px;
+    }
 
-      &__icon-social {
-        width: 24px;
-        height: 24px;
-      }
+    &__icon-social {
+      width: 24px;
+      height: 24px;
+    }
 
-      &__logo-link {
-        order: 2;
-      }
+    &__logo-link {
+      order: 2;
+    }
 
-      &__slogan-container {
-        order: 3;
-        width: 396px;
-      }
+    &__slogan-container {
+      order: 3;
+      width: 396px;
+    }
 
-      &__legal-links-container {
-        order: 4;
-        width: auto;
-        margin-bottom: 48px;
-      }
+    &__legal-links-container {
+      order: 4;
+      width: auto;
+      margin-bottom: 48px;
     }
   }
 }

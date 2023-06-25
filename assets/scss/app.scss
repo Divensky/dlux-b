@@ -1,8 +1,22 @@
 @import '~mmenu-js/dist/mmenu.css';
 
 //общие классы
+@import 'common/html';
+@import 'common/universal';
+@import 'common/img';
+@import 'common/picture';
+@import 'common/body';
+@import 'common/container';
+@import 'common/nobullet';
+@import 'common/notextdecoration';
+@import 'common/visually-hidden';
+@import 'common/accent-color';
+@import 'common/accent-font';
+@import 'common/slim-font';
+@import 'common/strong';
+@import 'common/section-header';
+@import 'common/mobile-only';
 @import 'common/fonts';
-@import 'common/common';
 @import 'common/animation';
 
 //header: навигация и текст

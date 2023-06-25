@@ -1,0 +1,10 @@
+.accent-font {
+  font-weight: 600;
+  font-family: Poppins, Verdana, sans-serif;
+  font-style: normal;
+  letter-spacing: -0.06em;
+
+  @media screen and (min-width: 900px) {
+    font-weight: 700;
+  }
+}

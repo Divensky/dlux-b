@@ -22,18 +22,16 @@
   }
 
   @media screen and (min-width: 900px) {
-    & {
-      &__title {
-        margin: 0 0 26px; //bottom margin
-        padding-top: calc((100vh - 254px) / 2 - 112px);
-        font-size: 36px;
-        line-height: 1.5;
-      }
+    &__title {
+      margin: 0 0 26px; //bottom margin
+      padding-top: calc((100vh - 254px) / 2 - 112px);
+      font-size: 36px;
+      line-height: 1.5;
+    }
 
-      &__item {
-        &:last-child {
-          margin-bottom: 34px;
-        }
+    &__item {
+      &:last-child {
+        margin-bottom: 34px;
       }
     }
   }
